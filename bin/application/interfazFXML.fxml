@@ -24,7 +24,49 @@
 			<tabs>
 				<Tab text="Monitoreo en tiempo real">
 					<content>
-						<SplitPane></SplitPane>
+						<SplitPane>
+							<SplitPane orientation="VERTICAL">
+							<!-- Este se repite 4 veces -->
+								
+								<VBox alignment="CENTER">
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="MOTOR 1"></Label>
+									<StackPane fx:id="chartContainer1"></StackPane>
+									<HBox alignment="CENTER" >
+										<Label  text="  Temperatura: ---"></Label>
+										<Label  text="  Estado: --- "></Label>
+									</HBox>
+								</VBox>
+								
+								<VBox alignment="CENTER">
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="MOTOR 2"></Label>
+									<StackPane fx:id="chartContainer2"></StackPane>
+									<HBox alignment="CENTER">
+										<Label  text="  Temperatura: ---"></Label>
+										<Label  text="  Estado: --- "></Label>
+									</HBox>
+								</VBox>
+							
+							</SplitPane>
+							
+							<SplitPane orientation="VERTICAL">
+								<VBox alignment="CENTER">
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="MOTOR 3"></Label>
+									<StackPane fx:id="chartContainer3"></StackPane>
+									<HBox alignment="CENTER" >
+										<Label  text="  Temperatura: ---"></Label>
+										<Label  text="  Estado: --- "></Label>
+									</HBox>
+								</VBox>
+								<VBox alignment="CENTER">
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="MOTOR 4"></Label>
+									<StackPane fx:id="chartContainer4"></StackPane>
+									<HBox alignment="CENTER" > 
+										<Label  text="  Temperatura: ---"></Label>
+										<Label  text="  Estado: --- "></Label>
+									</HBox>
+								</VBox>
+							</SplitPane>
+						</SplitPane>
 					</content>
 				</Tab>
 				<Tab text="Datos en fondo del pozo">
@@ -61,7 +103,7 @@
 										</VBox>
 								</SplitPane>
 								
-								<StackPane fx:id="chartContainer">
+								<StackPane fx:id="chartContainer5">
 								</StackPane>
 							</SplitPane>
 							<VBox maxWidth="200" alignment="TOP_CENTER" spacing="5">
@@ -79,10 +121,62 @@
 				</Tab>
 				<Tab text="Programar sensor">
 					<content>
+						<SplitPane >
+							<TableView prefWidth="650">
+											<columns>
+										          <TableColumn  text="Intervalo de Tiempo">
+											          <columns>
+											           <TableColumn prefWidth="150" text="Minutos">
+											          </TableColumn>
+											          <TableColumn prefWidth="150" text="Segundos">
+											          </TableColumn>
+											          </columns>
+										          </TableColumn>
+										         
+										         <TableColumn  text="Duración">
+											          <columns>
+											           <TableColumn prefWidth="150" text="Días">
+											          </TableColumn>
+											          <TableColumn prefWidth="150" text="Horas">
+											          </TableColumn>
+											          <TableColumn prefWidth="150" text="Minutos">
+											          </TableColumn>
+											          </columns>
+										          </TableColumn>
+										     </columns>  
+							</TableView>
+							<BorderPane maxWidth="350" >
+								<top>
+									<VBox alignment="TOP_CENTER" spacing="5">
+										<Label text=" "></Label>
+										<Label  text=" Resumen: "></Label>
+										
+									</VBox>
+								</top>
+								
+								<bottom>
+									<VBox alignment="TOP_CENTER" spacing="5">
+										<Button  text=" Obtener Programación del sensor "></Button>
+										<Button  text="                 Abrir Archivo                  "></Button>
+										<Button  text="               Guardar Archivo              "></Button>
+										<Button  text="                Imprimir Tabla                "></Button>
+									</VBox>
+								</bottom>
+							</BorderPane>
+							
+						</SplitPane>
 					</content>
 				</Tab>			
 				<Tab text="Tiempo de vida del pozo">
 					<content>
+						<VBox spacing="10" alignment="TOP_CENTER">
+							<Label text=" "></Label>
+							<Button text="Registrar Caudal"></Button>
+							<StackPane fx:id="chartContainer6"></StackPane>
+							<Label text="Tiempo de vida del pozo: --- días"></Label>
+						
+						</VBox>
+					
 					</content>
 				</Tab>	
 				<Tab text="Opciones">
