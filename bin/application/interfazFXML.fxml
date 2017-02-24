@@ -13,12 +13,12 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
 
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controladorInterfazFXML">
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" fx:controller="application.controladorInterfazFXML">
 	<!-- TODO Add Nodes -->
-	<top></top>
-	
+		
 	<center>
 		<TabPane  side="TOP" tabClosingPolicy="UNAVAILABLE">
 			<tabs>
@@ -60,10 +60,11 @@
 										</VBox>
 								</SplitPane>
 								
-								<StackPane>
+								<StackPane fx:id="chartContainer">
 								</StackPane>
 							</SplitPane>
-							<VBox maxWidth="200" alignment="TOP_CENTER">
+							<VBox maxWidth="200" alignment="TOP_CENTER" spacing="10">
+							<Label text=" "></Label>
 							<Button  text="Conectar sensor"></Button>
 							</VBox>
 						</SplitPane>
@@ -86,6 +87,11 @@
 		</TabPane>
 	</center>
 	
-	<bottom></bottom>
+	<bottom>
+		<HBox spacing="5" minHeight="-Infinity" style="-fx-background-color: linear-gradient(to bottom, paleturquoise, azure, paleturquoise);&#10;" >
+			<Label style="-fx-font-size:13" text="    Tipo de Sensor: PPS28"></Label>
+			<Label style="-fx-font-size:13" text="Serial NO.: 170080"></Label>
+		</HBox>
+	</bottom>
 </BorderPane>
 
