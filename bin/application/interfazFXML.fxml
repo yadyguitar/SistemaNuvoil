@@ -14,6 +14,9 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Hyperlink?>
 
 
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" fx:controller="application.controladorInterfazFXML">
@@ -173,7 +176,7 @@
 							<Label text=" "></Label>
 							<Button text="Registrar Caudal"></Button>
 							<StackPane fx:id="chartContainer6"></StackPane>
-							<Label text="Tiempo de vida del pozo: --- días"></Label>
+							<Label style="-fx-font-size:14;-fx-font-weight:bold" text="Tiempo de vida del pozo: --- días"></Label>
 						
 						</VBox>
 					
@@ -181,6 +184,44 @@
 				</Tab>	
 				<Tab text="Opciones">
 					<content>
+					
+						<SplitPane>
+							<ScrollPane fitToHeight="true" fitToWidth="true">
+								<VBox alignment="CENTER" spacing="20">
+									<Button prefWidth="250" Text="Información del pozo"></Button>
+									<Button  prefWidth="250" Text="Configurar Unidades de Medida"></Button>
+									<Button  prefWidth="250" Text="Presión Atmosférica"></Button>
+									<Button  prefWidth="250" Text="Diagnóstico"></Button>
+								</VBox>
+							</ScrollPane>
+							<VBox alignment="CENTER" spacing="10">
+							
+								<ImageView 
+					                fx:id="imageView"
+					                fitHeight="100"
+									fitWidth="150"
+					                pickOnBounds="false"
+					                preserveRatio="false">
+						            <image><Image  url="@logo_uv.png" backgroundLoading="true"/></image>
+						         </ImageView>
+						         
+								<ImageView 
+					                fx:id="imageView"
+					                fitHeight="100"
+									fitWidth="150"
+					                pickOnBounds="false"
+					                preserveRatio="false">
+						            <image><Image  url="@logo_nuvoil.png" backgroundLoading="true"/></image>
+						         </ImageView>
+						         
+								
+								<Label  style="-fx-font-size:15;-fx-font-weight:bold"  text=" Sistema de Monitoreo Nuvoil "></Label>
+								<Label  style="-fx-font-size:15"  text=" Universidad Veracruzana "></Label>
+								<Label  style="-fx-font-size:15"  text=" Version: 1.0 "></Label>
+								<Hyperlink   style="-fx-font-size:15"  text=" www.uv.mx " ></Hyperlink >
+							</VBox>
+						</SplitPane>
+					
 					</content>
 				</Tab>
 			</tabs>
