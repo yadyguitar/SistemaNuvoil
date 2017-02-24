@@ -13,19 +13,27 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.StackPane;
 
 public class Grafica {
-
-	Grafica(Node layout){
-		
-		
-		if(layout.getClass().equals(new StackPane().getClass()))
+	
+	Node layout=null;
+	String x;
+	String y;
+	
+	Grafica(Node layout, String x, String y){
+		this.layout=layout;
+		this.x=x;
+		this.y=y;
+	}
+	
+	void insertaGrafica(){
+		//Para la opción del que nodo sea un StackPane
+		if(this.layout.getClass().equals(new StackPane().getClass()))
 			((StackPane) layout).getChildren().add(this.creaChart());
-		
 	}
 	
 	private SwingNode creaChart(){ 
 		 JFreeChart chart = ChartFactory.createXYLineChart( null, // chart title 
-		                                                   "X", // x axis label 
-		                                                   "Y", // y axis label 
+		                                                   this.x, // x axis label 
+		                                                   this.y, // y axis label 
 		                                                   null, // data 
 		                                                   PlotOrientation.VERTICAL, true, // include legend 
 		                                                   true, // tooltips 

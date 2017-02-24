@@ -24,6 +24,7 @@
 			<tabs>
 				<Tab text="Monitoreo en tiempo real">
 					<content>
+						<SplitPane></SplitPane>
 					</content>
 				</Tab>
 				<Tab text="Datos en fondo del pozo">
@@ -63,9 +64,14 @@
 								<StackPane fx:id="chartContainer">
 								</StackPane>
 							</SplitPane>
-							<VBox maxWidth="200" alignment="TOP_CENTER" spacing="10">
+							<VBox maxWidth="200" alignment="TOP_CENTER" spacing="5">
 							<Label text=" "></Label>
-							<Button  text="Conectar sensor"></Button>
+							<Button  text="      Conectar sensor      "></Button>
+							<Button  text="         Abrir Archivo         "></Button>
+							<Button  text="      Guardar Archivo       "></Button>
+							<Button  text="      Imprimir Reporte      "></Button>
+							<Button  text="Convertidor de unidades"></Button>
+							
 							</VBox>
 						</SplitPane>
 					</content>
