@@ -126,6 +126,7 @@
 					<content>
 						<SplitPane >
 							<TableView prefWidth="650">
+							<!-- Lee esto: https://docs.oracle.com/javase/8/javafx/fxml-tutorial/fxml_tutorial_intermediate.htm -->
 											<columns>
 										          <TableColumn  text="Intervalo de Tiempo">
 											          <columns>
