@@ -177,6 +177,7 @@
 							<Label text=" "></Label>
 							<Button text="Registrar Caudal"></Button>
 							<StackPane fx:id="chartContainer6"></StackPane>
+							<StackPane fx:id="chartContainer7"></StackPane>
 							<Label style="-fx-font-size:14;-fx-font-weight:bold" text="Tiempo de vida del pozo: --- días"></Label>
 						
 						</VBox>
