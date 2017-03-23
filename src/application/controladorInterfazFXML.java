@@ -21,10 +21,10 @@ public class controladorInterfazFXML implements Initializable{
 	}
 
 	void inicializaGraficas(){
-		this.chart1= new Grafica(this.chartContainer1,"Tiempo","Temperatura");
-		this.chart2= new Grafica(this.chartContainer2,"Tiempo","Temperatura");
-		this.chart3= new Grafica(this.chartContainer3,"Tiempo","Temperatura");
-		this.chart4= new Grafica(this.chartContainer4,"Tiempo","Temperatura");
+		this.chart1= new Grafica(this.chartContainer1,"Tiempo","");
+		this.chart2= new Grafica(this.chartContainer2,"Tiempo","");
+		this.chart3= new Grafica(this.chartContainer3,"Tiempo","");
+		this.chart4= new Grafica(this.chartContainer4,"Tiempo","");
 		this.chart5= new Grafica(this.chartContainer5,"Tiempo","Presión y Temperatura");
 		this.chart6= new Grafica(this.chartContainer6,"Tiempo (días)","Presión");
 		this.chart7=new Grafica(this.chartContainer7,"Tiempo (días)","Caudal (Q)");

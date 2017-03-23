@@ -32,20 +32,18 @@
 							<!-- Este se repite 4 veces -->
 								
 								<VBox alignment="CENTER">
-									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="MOTOR 1"></Label>
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="Temperatura del motor"></Label>
 									<StackPane fx:id="chartContainer1"></StackPane>
 									<HBox alignment="CENTER" >
-										<Label  text="  Temperatura: ---"></Label>
-										<Label  text="  Estado: --- "></Label>
+										<Label  text="Temperatura actual: ---"></Label>
 									</HBox>
 								</VBox>
 								
 								<VBox alignment="CENTER">
-									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="MOTOR 2"></Label>
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="Nivel de aceite del motor"></Label>
 									<StackPane fx:id="chartContainer2"></StackPane>
 									<HBox alignment="CENTER">
-										<Label  text="  Temperatura: ---"></Label>
-										<Label  text="  Estado: --- "></Label>
+										<Label  text="Nivel de aceite actual: ---"></Label>
 									</HBox>
 								</VBox>
 							
@@ -53,19 +51,17 @@
 							
 							<SplitPane orientation="VERTICAL">
 								<VBox alignment="CENTER">
-									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="MOTOR 3"></Label>
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="Temperatura del fluído refrigerante del motor"></Label>
 									<StackPane fx:id="chartContainer3"></StackPane>
 									<HBox alignment="CENTER" >
-										<Label  text="  Temperatura: ---"></Label>
-										<Label  text="  Estado: --- "></Label>
+										<Label  text="Temperatura del fluído actual: ---"></Label>
 									</HBox>
 								</VBox>
 								<VBox alignment="CENTER">
-									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="MOTOR 4"></Label>
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="Velocidad del motor"></Label>
 									<StackPane fx:id="chartContainer4"></StackPane>
 									<HBox alignment="CENTER" > 
-										<Label  text="  Temperatura: ---"></Label>
-										<Label  text="  Estado: --- "></Label>
+										<Label  text="Velocidad actual: ---"></Label>
 									</HBox>
 								</VBox>
 							</SplitPane>
