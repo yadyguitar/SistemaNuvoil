@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws IOException  {
-		Parent mainLayout = FXMLLoader.load(getClass().getResource("interfazFXML.fxml"));
+		Parent mainLayout = FXMLLoader.load(getClass().getResource("/fxml/MainFXML.fxml"));
         Scene scene = new Scene(mainLayout, 1100, 600);
         primaryStage.setTitle("Sistema Nuvoil");
         primaryStage.setScene(scene);

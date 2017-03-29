@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<Tab xmlns:fx="http://javafx.com/fxml/1" text="Monitoreo en tiempo real" fx:controller="application.controladorInterfazFXML">
+					<content>
+						<SplitPane>
+							<SplitPane orientation="VERTICAL">
+							<!-- Este se repite 4 veces -->
+								
+								<VBox alignment="CENTER">
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="Temperatura del motor"></Label>
+									<StackPane fx:id="chartContainer1"></StackPane>
+									<HBox alignment="CENTER" >
+										<Label  text="Temperatura actual: ---"></Label>
+									</HBox>
+								</VBox>
+								
+								<VBox alignment="CENTER">
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="Nivel de aceite del motor"></Label>
+									<StackPane fx:id="chartContainer2"></StackPane>
+									<HBox alignment="CENTER">
+										<Label  text="Nivel de aceite actual: ---"></Label>
+									</HBox>
+								</VBox>
+							
+							</SplitPane>
+							
+							<SplitPane orientation="VERTICAL">
+								<VBox alignment="CENTER">
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="Temperatura del fluído refrigerante del motor"></Label>
+									<StackPane fx:id="chartContainer3"></StackPane>
+									<HBox alignment="CENTER" >
+										<Label  text="Temperatura del fluído actual: ---"></Label>
+									</HBox>
+								</VBox>
+								<VBox alignment="CENTER">
+									<Label style="-fx-font-size:14;-fx-font-weight:bold" text="Velocidad del motor"></Label>
+									<StackPane fx:id="chartContainer4"></StackPane>
+									<HBox alignment="CENTER" > 
+										<Label  text="Velocidad actual: ---"></Label>
+									</HBox>
+								</VBox>
+							</SplitPane>
+						</SplitPane>
+					</content>
+				</Tab>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+
+<Tab text="Programar sensor" xmlns:fx="http://javafx.com/fxml/1">
+					<content>
+						<SplitPane >
+							<TableView prefWidth="650">
+							<!-- Lee esto: https://docs.oracle.com/javase/8/javafx/fxml-tutorial/fxml_tutorial_intermediate.htm -->
+											<columns>
+										          <TableColumn  text="Intervalo de Tiempo">
+											          <columns>
+											           <TableColumn prefWidth="150" text="Minutos">
+											          </TableColumn>
+											          <TableColumn prefWidth="150" text="Segundos">
+											          </TableColumn>
+											          </columns>
+										          </TableColumn>
+										         
+										         <TableColumn  text="Duración">
+											          <columns>
+											           <TableColumn prefWidth="150" text="Días">
+											          </TableColumn>
+											          <TableColumn prefWidth="150" text="Horas">
+											          </TableColumn>
+											          <TableColumn prefWidth="150" text="Minutos">
+											          </TableColumn>
+											          </columns>
+										          </TableColumn>
+										     </columns>  
+							</TableView>
+							<BorderPane maxWidth="350" >
+								<top>
+									<VBox alignment="TOP_CENTER" spacing="5">
+										<Label text=" "></Label>
+										<Label  text=" Resumen: "></Label>
+										
+									</VBox>
+								</top>
+								
+								<bottom>
+									<VBox alignment="TOP_CENTER" spacing="5">
+										<Button  text=" Obtener Programación del sensor "></Button>
+										<Button  text="                 Abrir Archivo                  "></Button>
+										<Button  text="               Guardar Archivo              "></Button>
+										<Button  text="                Imprimir Tabla                "></Button>
+									</VBox>
+								</bottom>
+							</BorderPane>
+							
+						</SplitPane>
+					</content>
+				</Tab>

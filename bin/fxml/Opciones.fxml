@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Hyperlink?>
+
+
+
+<Tab text="Opciones" xmlns:fx="http://javafx.com/fxml/1">
+					<content>
+					
+						<SplitPane>
+							<ScrollPane fitToHeight="true" fitToWidth="true">
+								<VBox alignment="CENTER" spacing="20">
+									<Button prefWidth="250" Text="Información del pozo"></Button>
+									<Button  prefWidth="250" Text="Configurar Unidades de Medida"></Button>
+									<Button  prefWidth="250" Text="Presión Atmosférica"></Button>
+									<Button  prefWidth="250" Text="Diagnóstico"></Button>
+								</VBox>
+							</ScrollPane>
+							<VBox alignment="CENTER" spacing="10">
+							
+								<ImageView 
+					                fx:id="imageView"
+					                fitHeight="100"
+									fitWidth="150"
+					                pickOnBounds="false"
+					                preserveRatio="false">
+						            <image><Image  url="/images/logo_uv.png" backgroundLoading="true"/></image>
+						         </ImageView>
+						         
+								<ImageView 
+					                fx:id="imageView"
+					                fitHeight="100"
+									fitWidth="150"
+					                pickOnBounds="false"
+					                preserveRatio="false">
+						            <image><Image  url="/images/logo_nuvoil.png" backgroundLoading="true"/></image>
+						         </ImageView>
+						         
+								
+								<Label  style="-fx-font-size:15;-fx-font-weight:bold"  text=" Sistema de Monitoreo Nuvoil "></Label>
+								<Label  style="-fx-font-size:15"  text=" Universidad Veracruzana "></Label>
+								<Label  style="-fx-font-size:15"  text=" Version: 1.0 "></Label>
+								<Hyperlink   style="-fx-font-size:15"  text=" www.uv.mx " ></Hyperlink >
+							</VBox>
+						</SplitPane>
+					
+					</content>
+				</Tab>

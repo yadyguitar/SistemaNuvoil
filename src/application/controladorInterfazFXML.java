@@ -16,7 +16,11 @@ public class controladorInterfazFXML implements Initializable{
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-		inicializaGraficas();
+		try{
+			inicializaGraficas(); //porque primero ejecuta "MainFXML" y luego inserta "Monitoreo.fxml"
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+		}
 		
 	}
 
